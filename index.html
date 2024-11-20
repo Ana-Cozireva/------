@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of Ann</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <header class="head">
+                <a href="#" class="logo">Logo</a>
+                <nav class="navigation">
+                    <a href="#Home">Home</a>
+                    <a href="#">Artists</a>
+                    <a href="#">Collection</a>
+                    <a href="#">Contacts</a>
+                </nav>
+            </header>
+
+            <header class="hero-section">
+                <img data-lag=".5" class="hero" src="home/3.jpg" alt="Alt">
+                <div class="container">
+                    <div data-speed=".9" class="main-header">
+                        <h1 class="main-title">Art Gallery</h1>
+                    </div>
+                </div>
+            </header>
+
+            <div class="portfolio">
+                <div class="container">
+                    <main class="gallery">
+
+                        <div class="gallery__left">
+                            <img class="gallery__item" src="home/gal1.jpg" alt="Alt">
+                            <img class="gallery__item" src="home/gal2.jpg" alt="Alt">
+
+                            <div class="text-block gallery__item">
+                                <h2 class="text-block__h"></h2>
+                                <p class="text-block__p">Our local artists who put all their feelings and a part of
+                                    themselves into creating the gallery</p>
+                            </div>
+                            <img class="gallery__item" src="home/gal6.jpg" alt="Alt">
+
+                        </div>
+                        <div class="gallery__right">
+
+                            <div class="text-block gallery__item">
+                                <h2 class="text-block__h"> Our place</h2>
+                                <p class="text-block__p">In our gallery you can find halls with a specific theme</p>
+                            </div>
+
+                            <img class="gallery__item" src="home/gal3.jpg" alt="Alt">
+                            <img class="gallery__item" src="home/art4.jpg" alt="Alt">
+                            <div class="text-block gallery__item">
+                                <h2 class="text-block__h">Сreators</h2>
+                                <p class="text-block__p">people from all corners of the world gather here to see the
+                                    greatest art of all time</p>
+                            </div>
+                            <img class="gallery__item" src="home/gal5.jpg" alt="Alt">
+                        </div>
+                    </main>
+                    <p class="blockquote__text">
+                        "Paradoxically though it may seem, it is none the less true that life imitates art far more than
+                        art imitates life"
+                    </p>
+
+                    <div class="picture">
+                        <a class="image-container" href="Georgia Keeffe.html" target="_blank">
+                            <img src="artists/art3.jpg" alt="Image">
+                            <div class="image-text">Georgia Keeffe</div>
+                        </a>
+                        <a class="image-container" href="Eugene Delacroi.html" target="_blank">
+                            <img src="artists/art6.jpg" alt="Image">
+                            <div class="image-text">Eugene Delacroi</div>
+                        </a>
+                        <a class="image-container" href="Jean-Antoine Watteau.html" target="_blank">
+                            <img src="artists/art2.jpg" alt="Image">
+                            <div class="image-text">Jean-Antoine Watteau</div>
+                        </a>
+                        <a class="image-container" href="Frida Kahlo.html" target="_blank">
+                            <img src="artists/art5.jpg" alt="Image">
+                            <div class="image-text">Frida Kahlo</div>
+                        </a>
+                    </div>
+                    <section class="reviews">
+                        <div class="container">
+                            <ul class="reviews__list">
+                                <li class="reviews__item">
+                                    <blockquote>
+                                        <p class="reviews__text"> Her work blends abstraction with elements of realism,
+                                            often focusing on natural forms.</p>
+                                    </blockquote>
+                                </li>
+                                <li class="reviews__item">
+                                    <blockquote>
+                                        <p class="reviews__text">A leading French Romantic painter, whose works are
+                                            known for their vivid color.</p>
+                                    </blockquote>
+                                </li>
+                                <li class="reviews__item">
+                                    <blockquote>
+                                        <p class="reviews__text">French Rococo painter whose works are characterized by
+                                            their graceful.</p>
+                                    </blockquote>
+                                </li>
+                                <li class="reviews__item">
+                                    <blockquote>
+                                        <p class="reviews__text"> Known for her deeply personal, surreal, and symbolic
+                                            paintings.</p>
+                                    </blockquote>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="events">
+                        <h3 class="visually-hidden">Events</h3>
+                        <ul class="evets-list">
+                            <li class="events-item">
+                                <div class="events-card container">
+                                    <div class="events-card body">
+                                        <h3 
+                                        class="events-card-title backdrop-title"
+                                        data-title="Events"
+                                        > 
+                                        Lorem ipsum dolor sit.
+                                    </h3>
+                                    <div class="events-card-description">
+                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+                                    <a class="events-card button transparent" href="/">
+                                        View more
+                                    </a>
+                                    </div>
+                                    <img
+                                    class="events-card-image"
+                                    src="eavents/1.jpg"
+                                    alt="Photo"
+                                    width="518" height="718" loading="lazy"
+                                    />
+                                </div>
+                            </li>
+                            <li class="events-item">
+                                <div class="events-card container">
+                                    <div class="events-card body">
+                                        <h3 
+                                        class="events-card-title backdrop-title"
+                                        data-title="Events"
+                                        > 
+                                        Lorem ipsum 
+                                    </h3>
+                                    <div class="events-card-description">
+                                        <p>Lorem ipsum dolor .</p>
+                                    </div>
+                                    <a class="events-card button transparent" href="/">
+                                        View more
+                                    </a>
+                                    </div>
+                                    <img
+                                    class="events-card-image"
+                                    src="eavents/2.jpg"
+                                    alt="Photo"
+                                    width="518" height="718" loading="lazy"
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
