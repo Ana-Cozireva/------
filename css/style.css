@@ -64,11 +64,7 @@ body{
     position: absolute;
     left: 37vw;
     top: 22vh;
-    border-radius: 20px;
-    border: 2px solid rgb(26, 26, 31);
-    box-shadow: 0 0 5px rgb(52, 52, 54),
-                0 0  25px rgb(43, 43, 45);   
-    transition: 0.5s ease; 
+    border-radius: 20px; 
 }
 .main-header{
     height: 100vh;
@@ -214,10 +210,10 @@ body{
 }
 .banner .content{
     position: absolute;
-    bottom: 0;
-    left: 40%;
-    transform: translateX(-50%);
-    width: min(1400px, 10vw);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: min(1400px, 10vw); */
     height: max-content;
     display: flex;
     flex-wrap: wrap;
@@ -228,8 +224,21 @@ body{
 .banner .content h3{
     font-size: 10em;
     line-height: 1em;
-    color: rgb(112, 108, 103);
-    
+    color:rgb(40, 40, 56);
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #92929268, 0 0 10px #92929268, 0 0 15px #92929268, 0 0 20px #92929268;
+    }
+    50% {
+        text-shadow: 0 0 20px #131313, 0 0 30px #131313, 0 0 40px #131313, 0 0 50px #131313;
+    }
+}
+
+.glowing-text{
+    font-size: 40px;
+    color: white;
+    animation: glow 2s ease-in-out infinite; /* Анимация мигания */
 }
 .about{
     min-height: 100vh;
